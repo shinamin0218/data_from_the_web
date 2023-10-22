@@ -113,5 +113,18 @@ nyc_water =
 ```
 
 
+## BRFSS
+
+Same process, different data
+```{r}
+brfss_smart2010 = 
+  GET("https://data.cdc.gov/resource/acme-vg9e.csv",
+      query = list("$limit" = 5000)) %>%
+  content("parsed")
+
+  
+```
+
+
 
 
