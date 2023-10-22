@@ -58,4 +58,10 @@ runtime_vec = # I want to know how long this movies are
   swm_html %>%
   html_nodes(css = ".runtime") %>%
   html_text()
+
+swm_df =
+  tibble(
+    title = title_vec,
+    gross_rev = gross_rev_vec,
+    runtime = runtime_vec)
 ```
